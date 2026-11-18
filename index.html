@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Cinematic Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="header">
+        <h2 class="logo">MARVEL<span>VERSE</span></h2>
+        <p>ENTER THE CINEMATIC UNIVERSE</p>
+    </header>
+
+    <main class="gallery">
+
+        <div class="heading">
+            <span class="eyebrow">THE MULTIVERSE COLLECTION</span>
+            <h1>MARVEL <span>LEGENDS</span></h1>
+            <p>Every hero has a story. Every story has a universe.</p>
+        </div>
+
+        <div class="carousel">
+
+            <div class="side-card left-card">
+                <img id="prevImage" src="" alt="Previous Marvel movie">
+            </div>
+
+            <div class="main-card" id="mainCard">
+                <img id="movieImage" src="" alt="Marvel movie">
+
+                <div class="poster-overlay"></div>
+
+                <div class="poster-label">MARVEL STUDIOS</div>
+
+                <div class="image-counter" id="counter">01 / 08</div>
+            </div>
+
+            <div class="side-card right-card">
+                <img id="nextImage" src="" alt="Next Marvel movie">
+            </div>
+
+        </div>
+
+        <section class="movie-info" id="movieInfo">
+
+            <span class="movie-type" id="movieType"></span>
+
+            <h2 id="movieTitle">Iron Man</h2>
+
+            <p class="movie-description" id="movieDescription"></p>
+
+        </section>
+
+        <div class="controls">
+
+            <button class="arrow-btn" id="prevBtn" aria-label="Previous movie">
+                &#8592;
+            </button>
+
+            <div class="dots" id="dots"></div>
+
+            <button class="arrow-btn next-btn" id="nextBtn" aria-label="Next movie">
+                &#8594;
+            </button>
+
+        </div>
+
+        <button class="play-btn" id="playBtn">
+            <span id="playIcon">▶</span>
+            <span id="playText">START SLIDESHOW</span>
+        </button>
+
+        <footer>
+            <p>POWERED BY THE MULTIVERSE <span>✦</span></p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
